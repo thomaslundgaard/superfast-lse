@@ -23,6 +23,9 @@ function output = superfast_lse(y, index, N, varargin)
 %      y = \sum_k exp( sign * j * 2 * pi * theta_k * (index-1) ) * alpha_k + w.
 %   Sign is selected by calling the function with with option (..., 'sign',+/-1).
 %   The default is sign = -1. (which is opposite than in the paper).
+%	
+%	Copyright (c) 2018: Thomas Lundgaard Hansen.
+%	This software is being released under the MIT license (see LICENSE file).
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%
 	%% Setup struct with default parameters

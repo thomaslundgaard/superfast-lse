@@ -1,23 +1,26 @@
 # Superfast Line Spectral Estimation
-Implements the superfast method for line spectral estimation [1].
+Implements the superfast method for line spectral estimation [1]. If you use
+this code for academic purposes, please cite this work.
 
 [1] T. L. Hansen, B. H. Fleury and B. D. Rao - "Superfast Line Spectral
 Estimation", submitted to IEEE Transactions on Signal Processing, 2018,
 [preprint available on arXiv](https://arxiv.org/abs/1705.06073).
 
 Abstract:
-> A number of recent works have proposed to solve the line spectral estimation
-> problem by applying an off-the- grid extension of sparse estimation techniques.
-> These methods are preferable over classical line spectral estimation algorithms
-> because they inherently estimate the model order. However, they all have
-> computation times which grow at least cubically in the problem size, which
-> limits their practical applicability in cases with large problem. To alleviate
-> this issue, we propose a low-complexity method for line spectral estimation,
-> which also draws on ideas from sparse estimation. Our method is based on a
-> Bayesian view of the problem. The signal covariance matrix is shown to have
-> Toeplitz structure, allowing superfast Toeplitz inversion to be used. We
-> demonstrate that our method achieves estimation accuracy at least as good as
-> current methods and that it does so while being orders of magnitudes faster.
+> A number of recent works have proposed to solve the line spectral
+> estimation problem by applying off-the-grid extensions of sparse
+> estimation techniques. These methods are preferable over classical line
+> spectral estimation algorithms because they inherently estimate the model
+> order. However, they all have computation times which grow at least
+> cubically in the problem size, thus limiting their practical applicability
+> in cases with large dimensions. To alleviate this issue, we
+> propose a low-complexity method for line spectral estimation, which also
+> draws on ideas from sparse estimation. Our method is based on a
+> Bayesian view of the problem. The signal covariance matrix is shown to
+> have Toeplitz structure, allowing superfast Toeplitz inversion to be used.
+> We demonstrate that our method achieves estimation accuracy at least as
+> good as current methods and that it does so while being orders of
+> magnitudes faster.
 
 ## Setup & Usage
 A significant speedup of the code is obtained by building a mex version of the

@@ -6,6 +6,8 @@
 %% running n steps of the Schur algorithm on phi_0.
 %% Based on [1] G. S. Ammar and W. B. Gragg, "The Generalized Schur Algorithm
 %% for the Superfast Solution of Toeplitz Systems"
+% Copyright (c) 2018: Thomas Lundgaard Hansen.
+% This software is being released under the MIT license (see LICENSE file). 
 function [xi_n, eta_n, gamma] = genschur_recurrence(alpha_0, beta_0) %#codegen
 	n = length(alpha_0);
 	assert(n<=32);	% allow static memory allocation
