@@ -1,9 +1,9 @@
 # Superfast Line Spectral Estimation
 Implements the superfast method for line spectral estimation [1]. If you use
-this code for academic purposes, please cite this work.
+this code, please cite this work.
 
 [1] T. L. Hansen, B. H. Fleury and B. D. Rao - "Superfast Line Spectral
-Estimation", submitted to IEEE Transactions on Signal Processing, 2018,
+Estimation", *IEEE Transactions on Signal Processing*, vol. 66, pp. 2511-2526, May 2018,
 [preprint available on arXiv](https://arxiv.org/abs/1705.06073).
 
 Abstract:
@@ -27,6 +27,9 @@ A significant speedup of the code is obtained by building a mex version of the
 generalized Schur algorithm which is used internally. Do so by running
 `buildmex` in the MATLAB prompt. The MATLAB codegen feature is used to generate
 mex files.
+
+To allow static memory allocation, the largest N = length(y) that the generated
+mex files will support is specified in `buildmex.m`.
 
 MATLAB did not support recursion in codegen prior to version 9.0 (R2016a). On
 these earlier versions a, slower, fallback approach is used which only uses
